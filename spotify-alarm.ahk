@@ -4,6 +4,7 @@
 
 
 FADE_IN_TIME := 120
+MAX_VOLUME := 50
 
 
 // Change output device to HDMI with volume 0.0
@@ -25,3 +26,10 @@ while volume <= 100.0 {
 	VA_SetMasterVolume(volume)
 	Sleep, 1000
 }
+
+
+^!+p::
+if (volume > MAX_VOLUME) {
+	VA_SetMasterVolume(MAX_VOLUME)
+}
+ExitApp
