@@ -3,8 +3,8 @@
 #CommentFlag //
 
 
-FADE_IN_TIME := 120
-MAX_VOLUME := 50
+FADE_IN_TIME := 200
+MAX_VOLUME := 35
 
 
 // Change output device to HDMI with volume 0.0
