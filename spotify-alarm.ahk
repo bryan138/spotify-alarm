@@ -7,6 +7,9 @@ FADE_IN_TIME := 200
 MAX_VOLUME := 35
 
 
+// Run clock
+Run, clock/app/clock.exe, clock/app/
+
 // Change output device to HDMI with volume 0.0
 VA_SetDefaultEndpoint("Samsung", 0)
 VA_SetMasterVolume(0.0)
